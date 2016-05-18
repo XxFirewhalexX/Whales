@@ -1,0 +1,137 @@
+var welcome=prompt("Welcome to Toyland! Would you like to go EAT, go MEET someone, ATTACK Toyland, or LEAVE?").toUpperCase();
+switch(welcome){
+	case "EAT":
+		var eat=prompt("Where would you like to go eat? The MALL, the GREAT WHALE (restaurant), or go for a PICNIC?").toUpperCase();
+		switch(eat){
+			case "MALL":
+				var mall=prompt("You go to the restaurant to eat. From which restaurant do you want to eat from? MCWHALES, WHIZNOS, WHUBWAY, WHURGER WHING, or WFC?").toUpperCase();
+				switch(mall){
+					case "MCWHALES":
+						console.log("You go to McWhales and order a WhaleBurger. Whalie orders after you and you accidently bump into him and spill all of his Dr. Wepper drink. Whalie becomes furious and spills all of your food. You just lost about 15 whale cookies! Oh well…");
+						break;
+					case "WHIZNOS":
+						console.log("You go to Whiznos. The manager is there and he is super happy that you choose his restaurant over Whubway. Luckily, Whubway’s manager isn’t there, so he didn’t see you order from Whiznos. You enjoy your food peacefully, and no war breaks out. You leave Toyland happily and with a full belly!");
+						break;
+					case "WHUBWAY":
+						console.log("You go to Whubway, but the manager of Whiznos sees you. He becomes furious and declares war on Whubway right on the spot. Suddenly, Whubs from both Whubway and Whiznos were everywhere and everyone gets hit by a Whub from either restaurant.  They all blame you, and Whalie puts you in jail for 2 hours for committing unnecessary war. Only if you didn’t buy food from Whubway!");
+						break;
+					case "WHURGER WHING":
+						var whurgerwhing=prompt("You go to Whurger Whing. Whurger Whing is closed but their door to the kitchen is still open and unlocked. Would you like to steal from Whurger Whing?").toUpperCase();
+						switch(whurgerwhing){
+							case "YES":
+								console.log("You sneak into the door and come you with a delicious free meal of Whurger Whing. When you finish your Whurger, Whalie passes by and sees you with the Whurger. He realizes you stole from Whurger Whing and puts you in jail for 5 hours! Bad whale!");
+								break;
+							case "NO":
+								console.log("You decide not to steal from Whurger Whing, which is a good deed, but you still got an empty belly. You eventually get home without having a good meal, but you still enjoyed your home cooked meal. Maybe next time you visit Toyland, Whurger Whing would be open.");
+								break;
+							default:
+							console.log("Sorry, what you wanted to do isn’t one of the choices that you can do.");
+						}
+						break;
+					case "WFC":
+						var wfc=prompt("You go to WFC, ready to eat some yummy Whale Fried Chicken. You order a bucket full of fried chicken and you settle down to eat. Whalie passes by with a Whurger from McWhales and he sees you with the bucket of chicken. He wants to trade meals with you! Do you want to trade meals and eat McWhales instead?").toUpperCase();
+						switch(wfc){
+							case "YES":
+							var yeswfc=prompt("You trade meals with Whalie and you eat your Whurger, Wries, and Dr. Wepper. Later in the day, your stomach begins hurting and you wonder why. Do you want to go to the doctor?").toUpperCase();
+							switch(yeswfc){
+								case "YES":
+									console.log("You go to the doctor and the doctor sees that you have food poisoning. He treats you by giving some medicine with a dose of Aaron’s magical potions. You soon feel better already. Perhaps that McWhales Whurger meal was poisonous, or maybe Whalie poisoned it! You’re certainly not going to order from McWhales or take food from Whalie ever again!");
+									break;
+								case "NO":
+									console.log("You think it’s just a little bellyache from eating too much and walk on. While flying your way home, your stomach suddenly wrenches in pain and you slowly drop down from the sky. You are not aware of where you land, and below you is the highway. Luckily, you land on top of one of the cars and they pull over. The car sends you to the hospital, and they discover you have food poisoning. You will have to stay in the hospital for a few days, for the poison has spread! If you went to the doctor earlier, maybe this wouldn’t have happened. At least you get to stay in Toyland for a longer time!");
+									break;
+							}
+							break;
+							case "NO":
+								console.log("You want your WFC chicken, so Whalie leaves with his Whurger. You finish your chicken, and as you head out of Toyland, you see on the newspaper “WHALIE GETS POISONED FROM MCWHALES, SUES RESTAURANT FOR 2 BILLION WHALE COOKIES”. You realize if you traded the meal with Whalie, you would be the one who got ill. You now know never to trust McWhales, and that WFC is much better!");
+								break;
+							default:
+								console.log("Sorry, what you wanted to do isn’t one of the choices that you can do.");
+						}
+					break;
+				}
+				break;
+			case "GREAT WHALE":
+				var greatwhale=prompt("You go to the Great Whale, but there’s a super long lineup. Do you want to wait?").toUpperCase();
+				switch(greatwhale){
+					case "YES":
+						console.log("You wait for 5 hours. It’s already nighttime, and you go in to eat dinner. You come back home in the middle of the night, super exhausted. But at least you got to eat from the Great Whale!");
+						break;
+					case "NO":
+						console.log("You go back home early in the morning, but you don’t eat from the luxurious restaurant. Instead, you eat home cooked food. It’s not that bad, after all.");
+						break;
+					default:
+						console.log("Sorry, what you want isn't one of the choices that you can do.")
+				}
+				break;
+			case "PICNIC":
+				console.log("All by yourself, you go out for a picnic in Whale Park. You eat the sandwiches you packed and some delicious fruit. It’s a nice, sunny day, after all. You go home happy you picked a picnic, because nothing bad happened!");
+				break;
+			default:
+				console.log("Sorry, what you wanted to do isn’t one of the choices that you can do.");
+		}
+		break;
+	case "MEET":
+		var meet=prompt("You to up to a random whale, and you say hi. The whale says hi back and he tells you he’s Whalie. Do you WALK AWAY, CONTINUE TALKING, or KIDNAP him?").toUpperCase();
+		switch(meet){
+			case"WALK AWAY":
+				console.log("Whale calls you back but you ignore him as you walk away. Whalie is mad because you ignored the President of Toyland! He kicks you out of his city and you can’t come back for a day. Only if you kept talking with Whalie! *sighs*");
+				break;
+			case "CONTINUE TALKING":
+				var talking=prompt("You learn that Whalie’s President of Toyland! You tell him that you’re so honoured to meet him. Suddenly, a whale walks onto the highway and you see it. Do you SAVE him, or IGNORE the whale?").toUpperCase();
+				switch(talking){
+					case "SAVE":
+						console.log("You save the poor whale from the highway. Whalie sees this and thanks you for saving one of his fellow whales. He also gives you a million whale cookies and promotes you to Vice-President. What a good life you would have to just save one whale!");
+						break;
+					case "IGNORE":
+						console.log("You pretend you didn’t see the whale, and the whale screeches as he gets squished by a car. Whalie sees this and he also realizes you could’ve saved the whale. Whalie becomes furious and sends you to jail for one hour because you didn’t save one of his fellow whales. After one hour, Whalie kicks you out of Toyland for one week. No more visiting for a while!");
+						break;
+					default:
+						console.log("Sorry, what you wanted to do isn't one of the choices that you can do.");
+				}
+				break;
+			case"KIDNAP":
+				var kidnap=prompt("You take out your sword and prepare to tie Whalie up when suddenly Whalie unsheathes his legendary element sword. Would you like to fight Whalie?").toUpperCase();
+				switch(kidnap){
+					case"YES":
+						console.log("You challenge Whalie to a fight and you charge forward. Whalie easily uses his element sword and knocks you out with wind and fire. You wake up in prison, and you see Aaron the Giant in front of you. He is very concerned that you attacked his little whale and he will sentence you to 1 month in jail! You won’t go home for a while!");
+						break;
+					case"NO":
+						console.log("You step back and tell Whalie that it’s all a mistake. You say you thought Whalie was another whale, and when Whalie finally understood, you run away back to your home. The next day, you see “WANTED: WHALE KIDNAPPER! Whale is searching for his victim! Capture him ASAP!” You realize it’s you. Whalie has told Aaron that you wanted to capture another whale! You can’t go back to Toyland for a while, because they would be all searching for you!");
+						break;
+					default:
+						console.log("Sorry, what you wanted to do isn't one of the choices that you can do.");
+				}
+				break;
+			default:"Sorry, what you wanted isn't one of the choices that you can do.";
+		}
+		break;
+	case"ATTACK":
+		var attack=prompt("Do you have an army of some sort?").toUpperCase();
+		switch(attack){
+			case"YES":
+				var army=prompt("Do you have more than 10000 in your army?").toUpperCase();
+				switch(army){
+					case"YES":
+						console.log("You and your gigantic army attack Toyland. Aaron and Whalie only found out 5 hours after the invasion. They chased you out, but you caused great damage and killed more than 9000 whales in Toyland. If your intentions are to take over Toyland, perhaps you can next time, because there are much less whales now!");
+						break;
+					case"NO":
+						console.log("You and your medium sized army go to attack Toyland. Aaron and Whalie found out 3 hours after. They chased you out, but you killed about 500 whales. They capture some of your whales, but you manage to get away. Next time you should get a bigger army!");
+						break;
+					default:
+						console.log("Sorry, what you wanted to do isn't one of the choices that you can do.");
+				}
+				break;
+			case"NO":
+				console.log("You charge all by yourself and you shoot a random whale. The random whale was Whalie, and you become president of Toyland by killing the previous president! It’s only temporary, though, and Aaron will find out soon. But if you control the whales well, maybe you can overthrow Aaron!");
+				break;
+			default:
+				console.log("Sorry, What you wanted isn't one of the choices that you can do.");
+		}
+		break;
+	case"LEAVE":
+		console.log("Nothing happens as you go home. You just go home and nothing will happen for the rest of the day… Home sweet home, I guess.");
+		break;
+	default:
+		console.log("Sorry, what you wanted to do isn’t one of the choices that you can do.");
+}
